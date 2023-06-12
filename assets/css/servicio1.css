@@ -1,0 +1,23 @@
+#servicio1 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+#servicio1 .texto-servicio1 {
+    padding: 0rem 1rem;
+}
+
+#servicio1 video {
+    position: relative;
+    top: 50%;
+    left: 0%;
+    min-width: 100%;
+    max-width: 100%;
+    /* Marcamos que el maximo de alto sea el 50% de la web */
+    max-height: 50vh; 
+    border-radius: 5%;
+
+}

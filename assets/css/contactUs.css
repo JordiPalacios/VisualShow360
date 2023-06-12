@@ -1,0 +1,235 @@
+.contenedor-ContactUs {
+    position: relative;
+    min-height: 100vh;
+}
+
+#contactUs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+#contactUs h2 {
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  margin: 0;
+  padding: 30px 0 40px 0;
+}
+
+.dayNightMode {
+    position: fixed;
+    bottom: 50px;
+    left: -5px;
+    transform: scale(.75);
+    border-radius: 30%;
+    z-index: 999;
+}
+
+.dayNightMode:hover {
+    transform: scale(.8);
+}
+
+#contactUs .LogoContactUs img,
+#contactUs .LogoContactUs2 video {
+    display: none;
+}
+
+#RSS .containerRSS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+#RSS .containerRSS img {
+    max-height: 40px;
+}
+
+#RSS .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#RSS .containerText a{
+    margin: 0.25rem 0;
+    text-decoration: none;
+}
+
+#RSS form > a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0rem;
+    padding: .1rem 0;
+    position: absolute;
+    z-index: 2;
+}
+
+#ig,
+#whatsapp {
+    margin-right: .5rem;
+}
+
+#ig:hover,
+#whatsapp:hover {
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px 1px var(--box-shadow);
+}
+
+#contactUs .switchMode {
+    background: var(--primary);
+}
+
+.switchMode img[alt="Moon"],
+img[alt="Sun"] {
+    display: none;
+    transition: opacity .3s ease;
+}
+
+.switchMode img[alt="Sun"] {
+    display: initial;
+    transition: opacity .3s ease;
+}
+
+/* ***************************************
+*********** Form **************
+****************************************** */
+
+form {
+    font-size: 1rem;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    margin: 0 auto;;
+}
+
+input,
+textarea, input:focus,
+textarea:focus {
+    color: var(--white-rgba);
+    font-size: .75rem;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: var(--dark-rgba);
+    box-shadow: none;
+    cursor: pointer;
+    margin: .5rem 0 .5rem;
+    border-radius: 5%;
+}
+
+textarea {
+    resize: none;
+}
+
+#contactUs input::placeholder {
+    color: white;
+}
+
+form button {
+    background-color: var(--primary);
+    font-size: 1rem;
+    width: 11rem;
+    color: var(--white);
+    border: none;
+    padding: .5rem;
+    margin: .5rem 0rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--primary-2);
+}
+
+/* ***************************************
+*********** Responsive **************
+****************************************** */
+
+@media (min-width: 750px){
+
+    #contactUs {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px auto;
+        padding: 0 1rem;
+        margin: 0;
+        min-height: auto;
+        justify-content: center;
+        align-items: start;
+    }
+
+    #contactUs h2,
+    #contactUs .container,
+    #contactUs .LogoContactUs2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #contactUs h2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 30px 0 40px 0;
+        padding: 1rem;
+    }
+      
+    #contactUs .container{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin: 0;
+        padding: 5rem;
+    }
+
+    #contactUs .LogoContactUs2 {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        max-width: 22rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contactUs .LogoContactUs2 video {
+        position: relative;
+        display: block;
+        border-radius: 15%;
+        transform: scale(.7);
+        opacity: .75;
+        box-shadow: 0px 0px 20px 10px var(--box-shadow-2);
+        width: 100%;
+    }
+
+    .dayNightMode {
+        position: fixed;
+        bottom: 50px;
+        left: 10px;
+        transform: scale(1);
+        border-radius: 30%;
+        z-index: 999;
+    }
+
+    .dayNightMode:hover {
+        transform: scale(1.10);
+    }
+}
+
+
+
+

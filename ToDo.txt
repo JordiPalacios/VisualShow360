@@ -1,0 +1,17 @@
+ToDO List in Fotomaton Project - Content
+
+    * NavBarResponsive
+    * Hamburger
+    * Header With Video
+    * Logo in NewTab
+    * Day&Night Mode
+    * Link Ig
+    * Link Whats
+    * Logo Background
+    * Cartas Responsive
+    * Form - Sin el Backend
+    * Button con todas las pijadas
+    * Reel Background con todas las pijadas
+    * Natural Scrolling
+    * Add&Remove Class
+    * Fixed Menu

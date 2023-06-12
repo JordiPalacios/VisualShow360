@@ -1,0 +1,11 @@
+@import "/node_modules/normalize.css/normalize.css";
+@import "/node_modules/eins-modal/dist/css/eins-modal.min.css";
+@import "./main.css";
+@import "./container.css";
+@import "./fonts.css";
+@import "./sections.css";
+@import "./header.css";
+@import "./servicio1.css";
+@import "./servicio2.css";
+@import "./aboutUs.css";
+@import "./contactUs.css";

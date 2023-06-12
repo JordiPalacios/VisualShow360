@@ -1,0 +1,209 @@
+header {
+    padding: 2rem 0 6rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(var(--dark),var(--dark-2));
+ }
+
+ header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ header .logo {
+    margin: 0;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    max-width: 170%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+header div,
+header ul {
+    z-index: 1;
+}
+
+header nav {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+#navbar .containerNavbar {
+    position: absolute;
+}
+
+#navbar ul {
+    background: transparent;
+    position: relative;
+    font-size: 1.25rem;
+    right: 10%;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    transition: max-height .5s ease;
+    width: 100%;
+    overflow: hidden;
+}
+
+#navbar.open ul {
+    max-height: 150px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul a {
+    display: block;
+    padding: 1px 15px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+#navbar ul a:hover,
+#navbar ul a:focus {
+    color: var(--primary);
+    transition: color .5s ease, color .5s ease;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toggle:hover {
+    background-color: var(--white);
+}
+
+#active {
+    background-color: var(--dark-2);
+}
+
+/* ************************************
+CheckBox
+************************************ */
+
+.input-checkbox {
+    display: none;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-button span::before,
+.nav-button span::after,
+.nav-button span {
+    background-color: var(--primary);
+    width: 12px;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-button span::before,
+.nav-button span::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+}
+
+.nav-button span::before {
+    top: -20px;
+}
+
+.nav-button span::after {
+    top: -31.5px;
+}
+
+.input-checkbox:checked + .nav-button span {
+    background-color: transparent;
+}
+
+.input-checkbox:checked + .nav-button span::before {
+    top: -17px;
+    transform: rotate(135deg);
+}
+
+.input-checkbox:checked + .nav-button span::after {
+    top: -33.5px;
+    transform: rotate(-135deg);
+}
+
+/* ********************************************************
+Media Query (Responsive)
+******************************************************** */
+@media (min-width: 825px){
+    .nav-button {
+        display: none;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo-menu {
+        padding: 0 50px;
+    }
+
+    #navbar.openResponsive ul {
+        max-height: 150px;
+    }
+
+    #navbar .containerNavbar {
+        position: relative;
+        min-height: auto;
+        min-width: 100%;
+        margin: 0 15px 0 15px;
+    }
+
+    #navbar  ul {
+        text-align: center;
+        display: flex; /* agregado */
+        flex-direction: row;
+        top: 15px;
+        justify-content: center; /* agregado */
+        align-items: center; /* opcional */
+        box-sizing: border-box;
+      }
+}

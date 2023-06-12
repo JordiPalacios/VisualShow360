@@ -1,0 +1,22 @@
+/* Definimos los colores de la web */
+:root {
+    --primary : rgb(204, 8, 188);
+    --primary-2 : rgb(143, 12, 132);
+    --dark : rgb(0, 0, 0);
+    --dark-2 : rgb(36, 34, 34);
+    --dark-rgba: rgba(0, 0, 0, 0.1);
+    --white: rgb(236, 229, 229);
+    --white-2: rgb(212, 198, 198);
+    --white-rgba: rgba(255, 255, 255, 1);
+    --gradient-violet: linear-gradient(135deg, rgba(111,19,110,1) 0%, rgba(60,17,59,1) 25%, rgba(111,19,110,1) 50%, rgba(60,17,59,1) 75%, rgba(111,19,110,1) 100%);
+    --gradient-black: linear-gradient(135deg, rgb(17, 2, 19) 0%,rgb(63, 34, 66) 50%, rgba(17, 2, 19) 100%);
+    --gradient-black-violet: linear-gradient(135deg, rgba(157,47,171,1) 0%, rgba(63,20,69,1) 20%, rgba(63,20,69,1) 50%, rgba(63,20,69,1) 80%, rgba(157,47,171,1) 100%);
+    --box-shadow: rgba(255, 255, 255, 0.2);
+    --box-shadow-1: rgba(0,0,0,0.5);
+    --box-shadow-2: rgb(255, 0, 255);
+    --box-shadow-3: rgba(177, 31, 157, 0.815);
+}
+
+* {
+    box-sizing: border-box;
+}
