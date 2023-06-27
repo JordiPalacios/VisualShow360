@@ -1,0 +1,1 @@
+1- Antes de realizar un proyecto instala nodejs al pc y npm
