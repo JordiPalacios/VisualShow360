@@ -1,5 +1,5 @@
 header {
-    padding: 2rem 0 6rem;
+    padding: 2rem 0 7rem;
     position: relative;
     overflow: hidden;
     background: linear-gradient(var(--dark),var(--dark-2));
@@ -10,6 +10,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 header .logo-menu {
@@ -170,7 +171,7 @@ CheckBox
 /* ********************************************************
 Media Query (Responsive)
 ******************************************************** */
-@media (min-width: 825px){
+@media (min-width: 880px){
     .nav-button {
         display: none;
     }

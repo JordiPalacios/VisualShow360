@@ -23,17 +23,17 @@
   padding: 30px 0 40px 0;
 }
 
-.dayNightMode {
+#whatsScroll {
     position: fixed;
     bottom: 50px;
-    left: -5px;
-    transform: scale(.75);
-    border-radius: 30%;
+    left: 20px;
+    transform: scale(1.25);
     z-index: 999;
 }
 
-.dayNightMode:hover {
-    transform: scale(.8);
+#whatsScroll:hover {
+    transform: scale(1.35);
+    transition: transform .3s ease, transform .3s ease;
 }
 
 #contactUs .LogoContactUs img,
@@ -82,21 +82,7 @@
 #whatsapp:hover {
     border-radius: 25%;
     box-shadow: 0px 0px 10px 1px var(--box-shadow);
-}
-
-#contactUs .switchMode {
-    background: var(--primary);
-}
-
-.switchMode img[alt="Moon"],
-img[alt="Sun"] {
-    display: none;
-    transition: opacity .3s ease;
-}
-
-.switchMode img[alt="Sun"] {
-    display: initial;
-    transition: opacity .3s ease;
+    transition: box-shadow .3s ease, box-shadow .3s ease
 }
 
 /* ***************************************
@@ -104,7 +90,7 @@ img[alt="Sun"] {
 ****************************************** */
 
 form {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 form label {
@@ -117,7 +103,7 @@ input,
 textarea, input:focus,
 textarea:focus {
     color: var(--white-rgba);
-    font-size: .75rem;
+    font-size: .85rem;
     width: 100%;
     padding: 1rem;
     border: none;
@@ -138,7 +124,7 @@ textarea {
 
 form button {
     background-color: var(--primary);
-    font-size: 1rem;
+    font-size: 1.25rem;
     width: 11rem;
     color: var(--white);
     border: none;
@@ -156,7 +142,7 @@ form button:hover {
 *********** Responsive **************
 ****************************************** */
 
-@media (min-width: 750px){
+@media (min-width: 950px){
 
     #contactUs {
         display: grid;
@@ -210,7 +196,8 @@ form button:hover {
         position: relative;
         display: block;
         border-radius: 15%;
-        transform: scale(.7);
+        margin-left: 200px;
+        transform: scale(.9);
         opacity: .75;
         box-shadow: 0px 0px 20px 10px var(--box-shadow-2);
         width: 100%;

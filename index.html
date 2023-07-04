@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Show 360</title>
     <link rel="icon" href="./assets/img/Minimalist Elegant Luxury Jewelry Logo (25).png" />
 </head>
@@ -26,9 +26,11 @@
             <nav id="navbar">
                 <div class="containerNavbar">
                 <ul>
-                    <li><a href="#servicio1">Fotomatón 360° experience</a></li>
-                    <li><a href="#servicio2">Otros Productos</a></li>
-                    <li><a href="#aboutUs">¿Quienes Somos?</a></li>    
+                    <!-- TODO: Linkar bien cada sección & Revisar si los nombres son los definitivos -->
+                    <li><a href="#servicio1">Plataforma 360°</a></li>
+                    <li><a href="#servicio2">Fotomatón Espejo Mágico</a></li>
+                    <li><a href="#packs360">Packs 360°</a></li>
+                    <li><a href="#productos360">Productos 360°</a></li>
                     <li><a href="#contactUs">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -37,7 +39,7 @@
                 </video>
             </nav>
         </div>
-    </header>   
+    </header>
 
     <section id="servicio1">
         <div class="container">
@@ -50,6 +52,8 @@
                         <source src="./assets/video/wedding.mp4" />
                     </video>
                 </div>
+                <!-- TODO: Al hacer clic me tiene que llevar a otra página en la que aparezcan de forma ordenada todos los trabajos realizados -->
+                <button class="trabajos">+ Trabajos</button>
         </div>
     </section>
 
@@ -75,6 +79,13 @@
         </div>
     </section>
 
+    <section id="packs360">
+        <div class="container">
+            <h2>¡Packs <span class="color-text">360!</span></h2>
+            <p>Coming Soon...</p>
+        </div>
+    </section>
+
     <section id="aboutUs">
         <div class="container">
             <div class="LogoContactUs">
@@ -94,13 +105,13 @@
                 <label>
                     Tipo de Evento:
                     <br>
-                    <input type="text" name="tipo-evento" placeholder="Tengo una boda Boda">
+                    <input type="text" name="tipo-evento" placeholder="Ejemplo:Tengo una boda Boda">
                 </label>
-                
+
                 <label>
                     Teléfono:
                     <br>
-                    <input type="tel" name="teléfono" placeholder="+34 123 456 789">
+                    <input type="tel" name="teléfono" placeholder="Ejemplo: +34 123 456 789">
                 </label>
                 <label>
                     Fecha del Evento:
@@ -134,12 +145,11 @@
                     </video>
                 </div>
     </section>
-            
-    <button id="dayNightMode" class="dayNightMode">
-        <img src="./assets/icons/sunYellow.svg" alt="Sun" />
-        <img src="./assets/icons/moon.png" alt="Moon" />
-    </button>
-            
+
+    <a href="https://wa.me/34653781239?text=Quiero%20más%20información%20sobre%20VisualShow!" target="_blank" rel="noopener noreferrer">
+        <img id="whatsScroll" src="./assets/icons/whatsapp.svg" />
+    </a>
+
     <footer>
         <div class="container">
             <p>Developed and designed by JPalaciosDev. &copy;2023. All rights reserved.</p>
@@ -153,12 +163,12 @@
         <div class="eins-modal-close"></div>
 
         <img src="./assets/icons/ig.svg" alt="ig">
-        <p>Esto es un popup de prueba, lo puedes quitar sin problema. Estoy 
+        <p>Esto es un popup de prueba, lo puedes quitar sin problema. Estoy
             testeando la instalacion de la libreria con npm desde el curso de
             herramientas Frontend.
             Un saludo! Puedes con todo!
         </p>
-        
+
         <button class="eins-modal-close-button">OK</button>
     </div>
     </div>
