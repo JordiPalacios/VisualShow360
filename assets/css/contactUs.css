@@ -26,13 +26,13 @@
 #whatsScroll {
     position: fixed;
     bottom: 50px;
-    right: 10px;
-    transform: scale(1.25);
+    right: 15px;
+    transform: scale(1.05);
     z-index: 999;
 }
 
 #whatsScroll:hover {
-    transform: scale(1.35);
+    transform: scale(1.25);
     transition: transform .3s ease, transform .3s ease;
 }
 
