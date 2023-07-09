@@ -1,9 +1,12 @@
-var video = document.querySelector(".containerGalery video");
+var videos = document.querySelectorAll(".containerGalery video");
 
-video.addEventListener("mouseover", function() {
-  video.play();
-});
+    videos.forEach(function(video) {
+        
+        video.addEventListener("mouseover", function() {
+            video.play();
+        });
 
-video.addEventListener("mouseout", function() {
-  video.pause();
+        video.addEventListener("mouseout", function() {
+            video.pause();
+        });
 });
