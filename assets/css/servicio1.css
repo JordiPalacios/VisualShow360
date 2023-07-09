@@ -12,21 +12,36 @@
 
 #servicio1 .container-media {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    margin: 0rem;
-    padding: .1rem 0;
+}
+
+#servicio1 .containerGalery {
+    display: flex;
+    width: 100vh;
+    height: 75vh;
 }
 
 #servicio1 video {
-    position: relative;
+    /* position: relative;
     left: 0%;
     min-width: 100%;
-    max-width: 100%;
+    max-width: 100%; */
+
     /* Marcamos que el maximo de alto sea el 50% de la web */
-    max-height: 50vh; 
-    border-radius: 10%;
+
+    /* max-height: 50vh; 
+    border-radius: 10%; */
+
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#servicio1 video:hover {
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 #servicio1 button {
