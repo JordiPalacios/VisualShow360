@@ -10,18 +10,27 @@
     padding: 0rem 1rem;
 }
 
+#servicio1 .container-media {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0rem;
+    padding: .1rem 0;
+}
+
 #servicio1 video {
     position: relative;
-    top: 50%;
     left: 0%;
     min-width: 100%;
     max-width: 100%;
     /* Marcamos que el maximo de alto sea el 50% de la web */
     max-height: 50vh; 
-    border-radius: 5%;
-
+    border-radius: 10%;
 }
 
 #servicio1 button {
     margin: 10px 0px 0px;
+    /* TODO: Crear el apartado de + trabajos y habilitar el boton  */
+    display: none;
 }
