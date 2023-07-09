@@ -194,37 +194,41 @@
 
     <!-- *********************************************************** -->
     <!-- TODO: Quitar de aqui y hacer que funcione en la llamada de index.js -->
+    
+    <!-- AddRemoveClass.js -->
     <script>
         (function () {
-        let navbar = document.querySelector('#navbar');
-        let hamburger = document.querySelector('#input-checkbox'); 
-        hamburger.addEventListener('click', () => {
-        navbar.classList.toggle('open');
-    })
-    })();
-    </script>
-    <script>
-        (function () {
-    let navbar = document.querySelector('#navbar');
+            let navbar = document.querySelector('#navbar');
 
-    if (window.innerWidth >= 700) {
-        navbar.classList.add("openResponsive");
-    } else {
-        navbar.classList.remove("openResponsive");
-    }
-    })();
+            if (window.innerWidth >= 700) {
+                navbar.classList.add("openResponsive");
+            } else {
+                navbar.classList.remove("openResponsive");
+            }
+        })();
     </script>
+    <!-- Hamburger.js -->
+    <script>
+        (function () {
+            let navbar = document.querySelector('#navbar');
+            let hamburger = document.querySelector('#input-checkbox'); 
+                hamburger.addEventListener('click', () => {
+                    navbar.classList.toggle('open');
+                })
+        })();
+    </script>
+    <!-- AutoPlay.js -->
     <script>
         var videos = document.querySelectorAll(".containerGalery video");
 
-        videos.forEach(function(video) {
-            
-            video.addEventListener("mouseover", function() {
-                video.play();
-            });
+            videos.forEach(function(video) {
+                
+                video.addEventListener("mouseover", function() {
+                    video.play();
+                });
 
-            video.addEventListener("mouseout", function() {
-                video.pause();
+                video.addEventListener("mouseout", function() {
+                    video.pause();
             });
         });
     </script>
