@@ -39,7 +39,7 @@
 }
 
 #servicio1 video:hover {
-    width: 200px;
+    width: 250px;
     opacity: 1;
     filter: contrast(120%);
 }
