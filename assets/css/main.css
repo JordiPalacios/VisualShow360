@@ -2,6 +2,8 @@
 :root {
     --primary : rgb(204, 8, 188);
     --primary-2 : rgb(143, 12, 132);
+    --primary-3 : rgb(245, 128, 236);
+    --primary-4 : rgb(236, 221, 235);
     --dark : rgb(0, 0, 0);
     --dark-2 : rgb(36, 34, 34);
     --dark-rgba: rgba(0, 0, 0, 0.1);

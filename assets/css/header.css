@@ -1,5 +1,5 @@
 header {
-    padding: 2rem 0 7rem;
+    padding: 3rem 0 7.5rem;
     position: relative;
     overflow: hidden;
     background: linear-gradient(var(--dark),var(--dark-2));
@@ -9,21 +9,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
 }
 
 header .logo-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px;
 }
 
  header .logo {
-    margin: 0;
-    padding: 15px 20px;
+    margin: 0px;
+    padding: 0px;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 header video {
@@ -31,8 +30,6 @@ header video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    max-width: 170%;
     opacity: 0.3;
     z-index: 0;
 }
@@ -57,8 +54,6 @@ header nav {
 #navbar ul {
     background: transparent;
     position: relative;
-    font-size: 1.25rem;
-    right: 10%;
     margin: 0;
     padding: 0;
     max-height: 0;
@@ -80,12 +75,17 @@ header nav {
     display: block;
     padding: 1px 15px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--primary-4);
 }
 
 #navbar ul a:hover,
 #navbar ul a:focus {
-    color: var(--primary);
+    color: var(--primary-3);
+    transition: color .5s ease, color .5s ease;
+}
+
+#navbar ul a:not(:hover) {
+    color: var(--primary-4);
     transition: color .5s ease, color .5s ease;
 }
 
@@ -101,7 +101,7 @@ header nav {
 }
 
 #toggle:hover {
-    background-color: var(--white);
+    background-color: var(--primary-4);
 }
 
 #active {
@@ -159,7 +159,7 @@ CheckBox
 }
 
 .input-checkbox:checked + .nav-button span::before {
-    top: -17px;
+    top: -18px;
     transform: rotate(135deg);
 }
 
@@ -171,20 +171,28 @@ CheckBox
 /* ********************************************************
 Media Query (Responsive)
 ******************************************************** */
-@media (min-width: 880px){
+@media (min-width: 1000px){
+    header {
+        padding: 5rem 0 6rem;
+     }
+
     .nav-button {
         display: none;
     }
 
-    header .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    header nav {
+        font-size: 1.4rem;
     }
 
-    header .logo-menu {
-        padding: 0 50px;
+    header .logo {
+        font-size: 4.5rem;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     #navbar.openResponsive ul {
@@ -195,16 +203,13 @@ Media Query (Responsive)
         position: relative;
         min-height: auto;
         min-width: 100%;
-        margin: 0 15px 0 15px;
     }
 
     #navbar  ul {
-        text-align: center;
-        display: flex; /* agregado */
+        display: flex; 
         flex-direction: row;
         top: 15px;
-        justify-content: center; /* agregado */
-        align-items: center; /* opcional */
+        align-items: center; 
         box-sizing: border-box;
       }
 }
