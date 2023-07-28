@@ -4,5 +4,5 @@
     let hamburger = document.querySelector('#input-checkbox'); 
     hamburger.addEventListener('click', () => {
         navbar.classList.toggle('open');
-    })
+    });
 })();
