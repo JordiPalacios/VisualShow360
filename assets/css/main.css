@@ -13,6 +13,7 @@
     --gradient-violet: linear-gradient(135deg, rgba(111,19,110,1) 0%, rgba(60,17,59,1) 25%, rgba(111,19,110,1) 50%, rgba(60,17,59,1) 75%, rgba(111,19,110,1) 100%);
     --gradient-black: linear-gradient(135deg, rgb(17, 2, 19) 0%,rgb(63, 34, 66) 50%, rgba(17, 2, 19) 100%);
     --gradient-black-violet: linear-gradient(135deg, rgba(157,47,171,1) 0%, rgba(63,20,69,1) 20%, rgba(63,20,69,1) 50%, rgba(63,20,69,1) 80%, rgba(157,47,171,1) 100%);
+    --gradient-primary: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(235,136,227,1) 25%, rgba(218,91,207,1) 50%, rgba(235,136,227,1) 75%, rgba(255,255,255,1) 95%);;
     --box-shadow: rgba(255, 255, 255, 0.2);
     --box-shadow-1: rgba(0,0,0,0.5);
     --box-shadow-2: rgb(255, 0, 255);

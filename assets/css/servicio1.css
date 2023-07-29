@@ -55,9 +55,8 @@
     padding-top: 10px;
 }
 
-@media (min-width: 915px){
+@media (min-width: 970px){
     #servicio1 .containerGalery {
-        width: 100vh;
-        height: 75vh;
+        display: none;
     }
 }

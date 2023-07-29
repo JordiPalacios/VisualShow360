@@ -2,6 +2,15 @@
     text-align: center;
 }
 
+#servicio2 .servicio2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 15px;
+}
+
+
 #servicio2 .container {
     padding: 15px 12px;
 }
@@ -12,46 +21,11 @@
 }
 
 #servicio2 p {
-    display: block;
+    text-wrap: balance;
 }
 
-#servicio2 .carta {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0;
-    margin: 30px;
-    border-radius: 15%;
+#servicio2 img {
+    border-radius: 5%;
+    max-width: 400px;
+    box-shadow: 0px 0px 20px 2px black;
 }
-
-.carta:first-child {
-    background-image: linear-gradient(
-        0deg,
-        var(--box-shadow-1),
-        var(--box-shadow-1)
-    )
-    ,url("../img/EspejoMagico.webp");
-}
-
-.carta:nth-child(2) {
-    background-image: linear-gradient(
-        0deg,
-        var(--box-shadow-1),
-        var(--box-shadow-1)
-    )
-    ,url("../img/kitAntiresaca.webp");
-}
-
-/* *******************************************************
-MediaQuery
-******************************************************* */
-@media (min-width: 700px){
-    #servicio2 .servicio2 {
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    #servicio2 .carta {
-        width: 50%;
-    }
-} 

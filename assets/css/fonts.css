@@ -40,6 +40,6 @@ footer p{
 }
 
 .even {
-    background: var(--gradient-violet);
-    color: var(--white);
+    background: var(--gradient-primary);
+    color: var(--dark);
 }
