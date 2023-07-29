@@ -171,7 +171,7 @@ CheckBox
 /* ********************************************************
 Media Query (Responsive)
 ******************************************************** */
-@media (min-width: 1000px){
+@media (min-width: 1015px){
     header {
         padding: 5rem 0 6rem;
      }

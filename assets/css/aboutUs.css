@@ -1,25 +1,40 @@
 #aboutUs .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 2rem 2rem;
     position: relative;
+    text-align: center;
 }
 
-#aboutUs .texto-aboutUs {
-    z-index: 1;
+#aboutUs .containerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-#aboutUs .LogoContactUs img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(.5) rotate(-25deg);
+#aboutUs img {
+    box-shadow: 1px -1px 20px #ffffff, 1px -1px 20px #ff00e0, -1px 1px 20px #ff00e0, 1px 1px 20px #ff00e0;
     border-radius: 50%;
-    opacity: .25;
-    z-index: 0;
-    max-height: 400px;
-    min-height: 230px;
+    max-width: 200px;
+}
+
+#aboutUs p {
+    color: var(--primary-2);
+    text-wrap: balance;
+}
+
+@media (min-width: 960px){
+    #aboutUs .containerText{
+        flex-direction: row;
+    }
+
+    #aboutUs img {
+        border-radius: 50%;
+        transform: scale(1.5);
+    }
 }
