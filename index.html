@@ -49,9 +49,9 @@
                     <p>
                         ¿Os gustaría marcar la diferencia en vuestra boda, llevarte el mejor recuerdo en vídeo y que además vuestros invitados disfruten de una velada de lo más entretenida?<br>
                         Si buscas algo <b><span class="color-text">nuevo</span></b> y <b><span class="color-text">diferente</span></b> para recordar un día especial, estás en el sitio indicado.<br>
-    
-                        <b>¡Baila, ríe y disfruta en la <span class="color-text">Plataforma 360°</span> a tu propio estilo!</b>                    
-                    </p> 
+
+                        <b>¡Baila, ríe y disfruta en la <span class="color-text">Plataforma 360°</span> a tu propio estilo!</b>
+                    </p>
                     <h3><b><span class="color-text">¡Comparte tu mejor recuerdo con todos!</span></b><br></h3>
                 </div>
                 <div class="container-media">
@@ -68,13 +68,13 @@
                         <video loop muted>
                             <source src="./assets/video/VideoVLC2.mp4" />
                     </div>
-                </div>               
+                </div>
                 <footer>
                 <h4><b>Más trabajos → </b></h4>
                 <a href="https://www.instagram.com/visualshow360?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer">
                     <img id="ig" src="./assets/icons/ig.svg"/>
                 </a>
-                </footer>           
+                </footer>
         </div>
     </section>
 
@@ -184,7 +184,7 @@
 
     <!-- *********************************************************** -->
     <!-- TODO: Quitar de aqui y hacer que funcione en la llamada de index.js -->
-    
+
     <!-- AddRemoveClass.js -->
     <script>
         (function () {
@@ -201,10 +201,10 @@
     <script>
         (function () {
             let navbar = document.querySelector('#navbar');
-            let hamburger = document.querySelector('#input-checkbox'); 
+            let hamburger = document.querySelector('#input-checkbox');
                 hamburger.addEventListener('click', () => {
                     navbar.classList.toggle('open');
-                })
+                });
         })();
     </script>
     <!-- AutoPlay.js -->
@@ -212,7 +212,7 @@
         var videos = document.querySelectorAll(".containerGalery video");
 
             videos.forEach(function(video) {
-                
+
                 video.addEventListener("mouseover", function() {
                     video.play();
                 });
