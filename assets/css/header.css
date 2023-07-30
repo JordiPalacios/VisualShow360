@@ -164,7 +164,7 @@ CheckBox
 }
 
 .input-checkbox:checked + .nav-button span::after {
-    top: -33.5px;
+    top: -34.5px;
     transform: rotate(-135deg);
 }
 

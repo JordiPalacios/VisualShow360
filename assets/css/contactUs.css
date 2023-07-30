@@ -43,7 +43,7 @@
 }
 
 .contactFixed img:hover {
-    transform: scale(1.25);
+    transform: scale(1.35);
     transition: transform .3s ease, transform .3s ease;
 }
 
@@ -226,7 +226,7 @@ form button:hover {
     }
     
     .contactFixed img:hover {
-        transform: scale(1.7);
+        transform: scale(1.55);
         transition: transform .3s ease, transform .3s ease;
     }
     
