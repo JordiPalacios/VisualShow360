@@ -1,9 +1,9 @@
 #aboutUs .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     position: relative;
-    text-align: center;
 }
 
 #aboutUs .containerText {
@@ -25,11 +25,13 @@
 #aboutUs p {
     color: var(--primary-2);
     text-wrap: balance;
+    margin: 10px 30px;
 }
 
 @media (min-width: 960px){
     #aboutUs .containerText{
         flex-direction: row;
+        margin-right: 60px;
     }
 
     #aboutUs img {

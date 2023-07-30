@@ -33,30 +33,17 @@
     z-index: 999;
 }
 
+.contactFixed p,
 .cursor {
-    display: inline-block;
-    width: 2px;
-    height: 20px;
-    background-color: var(--dark);
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
+    display: none;
 }
 
 .contactFixed img {
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 .contactFixed img:hover {
-    transform: scale(1.65);
+    transform: scale(1.25);
     transition: transform .3s ease, transform .3s ease;
 }
 
@@ -215,6 +202,50 @@ form button:hover {
         opacity: .9;
         box-shadow: 0px 0px 20px 10px var(--box-shadow-2);
         width: 100%;
+    }
+
+    .contactFixed {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        margin-right: 15px;
+        align-items: center;
+        gap: .5rem;
+        bottom: 50px;
+        right: 15px;
+        z-index: 999;
+    }
+
+    .contactFixed p,
+    .cursor {
+        display: flex;
+    }
+
+    .contactFixed img {
+        transform: scale(1.2);
+    }
+    
+    .contactFixed img:hover {
+        transform: scale(1.7);
+        transition: transform .3s ease, transform .3s ease;
+    }
+    
+    .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 20px;
+        background-color: var(--dark);
+        animation: blink 1s infinite;
+    }
+    
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+    
+        50% {
+            opacity: 0;
+        }
     }
 
 }

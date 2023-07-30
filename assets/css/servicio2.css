@@ -22,7 +22,7 @@
 #servicio2 img {
     border-radius: 5%;
     max-width: 300px;
-    box-shadow: 0px 0px 20px 2px black;
+    box-shadow: 0px 0px 20px 2px var(--dark);
 }
 
 @media (min-width: 960px){
