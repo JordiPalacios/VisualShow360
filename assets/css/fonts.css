@@ -24,7 +24,9 @@ h3 {
     color: var(--primary);
 }
 
-p {
+p,
+p1,
+p2 {
     font-size: 1.15rem;
 }
 
